@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1" />
+    <!--preloader-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"/>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- bootstrap -->  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Oxanium|Roboto&display=swap"
+      rel="stylesheet"/>
+    <!--Ubuntu-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:700,700i&display=swap"
+      rel="stylesheet"/>
+ 
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Covid Tracker</title>
+    <link rel="icon" href="logo.png" type="image/ico" />
+  </head>
+  <body>
+       
+
+<section>
+  <div class="">
+    <h1 class="text-center heading font-weight-bold">
+      <u>COVID-19 STATISTICS</u>
+   </h1>
+   <h6 class="container text-left">Last Updated:</h6>
+     <!--time and date-->
+     <p class="container" id="lastupdated"></p>
+   
+  </div>
+
+
+  <div class="container">
+    
+      
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 p-3">
+               <div class="service_box blue">
+                   <div class="service_content">
+                       <h3 class="title">Total Cases</h3>
+                       
+                       <div class="service_icon">
+                           <span><i class="fas fa-virus fa-2x"></i> </span>
+                       </div>
+                       <h4 class="cases mt-2" id="total"></h4>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-sm-6 p-3">
+            <div class="service_box green">
+              <div class="service_content">
+                <h3 class="title">Total Recoveries</h3>
+                
+                <div class="service_icon">
+                    <span><i class="fas fa-shield-virus fa-2x"></i> </span>
+                </div>
+                <h4 class="cases mt-2" id="recovered"></h4>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 p-3">
+                <div class="service_box black">
+                  <div class="service_content ">
+                    <h3 class="title">Total Deaths</h3>
+                    
+                    <div class="service_icon">
+                        <span><i class="fas fa-viruses fa-2x"></i> </span>
+                    </div>
+                    <h4 class="cases mt-2" id="deaths"></h4>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 p-3">
+                <div class="service_box purple">
+                    <div class="service_content">
+                        <h3 class="title">Active Cases</h3>
+                        
+                        <div class="service_icon">
+                            <span><i class="fas fa-head-side-virus fa-2x"></i> </span>
+                        </div>
+                        <h4 class="cases mt-2" id="active"></h4>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-lg-4 col-sm-6 p-3">
+             <div class="service_box orange">
+               <div class="service_content">
+                 <h3 class="title">New Cases</h3>
+                 
+                 <div class="service_icon">
+                     <span><i class="fas fa-virus-slash fa-2x"></i> </span>
+                 </div>
+                 <h4 class="cases mt-2" id="newcases"></h4>
+             </div>
+             </div>
+         </div>
+         <div class="col-lg-4 col-sm-6 p-3">
+                 <div class="service_box red">
+                   <div class="service_content ">
+                     <h3 class="title">New Deaths</h3>
+                     
+                     <div class="service_icon">
+                         <span><i class="fas fa-lungs-virus fa-2x"></i> </span>
+                     </div>
+                     <h4 class="cases mt-2" id="newdeaths"></h4>
+                 </div>
+                 </div>
+             </div>
+       </div>
+
+       <canvas id="myChart"></canvas>
+   </div>
+   
+</section>
+
+     <script src="index.js"></script>
+     <!--jQuery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!--Chart.js-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</body>
+</html>
